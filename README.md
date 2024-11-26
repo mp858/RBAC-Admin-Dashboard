@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an admin dashboard for managing users and roles, which stores the data in the browser's `localStorage`. The application allows users to be added, edited, and deleted, as well as roles to be created and assigned to users. All data is persisted across browser refreshes using `localStorage`.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Role Management**:
+  - Add new roles.
+  - Edit existing roles.
+  - Delete roles.
+  - Each role can have multiple permissions (Read, Write, Delete).
+  
+- **User Management**:
+  - Add new users.
+  - Edit existing users.
+  - Delete users.
+  - Assign roles to users.
+  - Set user status (Active/Inactive).
+  
+- **Data Persistence**:
+  - All roles and users are stored in `localStorage`, ensuring the data persists across page refreshes.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you run the application, make sure you have the following installed:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14 or above)
+- npm (Node Package Manager)
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow the steps below to run the app on your local machine:
 
-### `npm run build`
+### 1. Clone the Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+git clone <repository-url>
+cd <project-directory>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install Dependencies
+In the project directory, run the following command to install the required dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm install
+3. Run the Application
+After installing dependencies, run the following command to start the app:
 
-### `npm run eject`
+bash
+Copy code
+npm start
+The app will be available at http://localhost:3000 in your browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Using the Admin Dashboard
+Once the application is running, follow these steps:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Add Roles
+Before you can add any users, you need to first create at least one role. Here’s how:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Navigate to the Role Management section.
+Click on the + Add Role button.
+Enter the Role Name and assign any desired permissions (Read, Write, Delete).
+Click Save to add the role.
+2. Add Users
+After creating roles, you can start adding users. Here’s how:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Navigate to the User Management section.
+Click on the + Add User button.
+Enter the User's Name, Email, select a Role, and choose a Status (Active/Inactive).
+Click Save to add the user.
+3. Editing and Deleting Users/Roles
+You can also edit and delete users and roles:
 
-## Learn More
+To edit, click the Edit button next to a user or role.
+To delete, click the Delete button next to a user or role.
+4. Data Persistence
+All roles and users will be saved in the browser's localStorage. This ensures that your data persists even after a page refresh.
+5. Search
+You can search for users or roles by typing in the search box at the top of the respective management sections.
+Local Storage
+Roles and users are stored in localStorage as follows:
+Roles: Stored under the key roles.
+Users: Stored under the key users.
+The data is automatically loaded from localStorage when the app starts, ensuring that no data is lost on refresh.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+File Structure
+Here’s an overview of the file structure:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+bash
+Copy code
+/src
+  /components
+    - UserManagement.js      # User management page
+    - UserModal.js           # Modal to add/edit users
+    - RoleManagement.js      # Role management page
+    - RoleModal.js           # Modal to add/edit roles
+  /context
+    - RBACContext.js         # Context for managing users and roles
+  /styles
+    - UserManagement.css     # Styles for user management
+    - RoleManagement.css     # Styles for role management
+    - UserModal.css          # Styles for user modal
+    - RoleModal.css          # Styles for role modal
+  - App.js                   # Main application component
+  - index.js                 # Entry point of the app
+  - README.md                # This file
+Troubleshooting
+1. Local Storage Not Persisting Data
+Ensure your browser is not in Incognito or Private mode, as local storage may not persist in those cases.
+Check the browser’s developer console for any errors related to local storage.
+2. Roles or Users Not Displaying After Refresh
+Ensure that you have added roles first, as users cannot be added without roles. The app fetches roles from localStorage when it loads.
+Contributing
+Feel free to fork this repository and submit pull requests for any improvements or bug fixes.
