@@ -68,7 +68,7 @@ After creating roles, you can start adding users. Here’s how:
 
   -Navigate to the User Management section.
   -Click on the + Add User button.
-  -Enter the User's Name, Email, select a Role, and choose a Status (Active/Inactive).
+  -Enter the User's Name, Email(Email should be unique as each user  will  identified uniquely be it E-mail), select a Role(from the existing roles), and choose a Status (Active/Inactive).
   -Click Save to add the user.
 ### 3. Editing and Deleting Users/Roles
 You can also edit and delete users and roles:
