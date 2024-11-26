@@ -36,57 +36,58 @@ Follow the steps below to run the app on your local machine:
 ```bash
 git clone <repository-url>
 cd <project-directory>
-
-2. Install Dependencies
+```
+### 2. Install Dependencies
 In the project directory, run the following command to install the required dependencies:
 
-bash
+```bash
 Copy code
 npm install
-3. Run the Application
+```
+### 3. Run the Application
 After installing dependencies, run the following command to start the app:
 
-bash
+```bash
 Copy code
 npm start
+```
 The app will be available at http://localhost:3000 in your browser.
 
-Using the Admin Dashboard
+## Using the Admin Dashboard
 Once the application is running, follow these steps:
 
-1. Add Roles
+### 1. Add Roles
 Before you can add any users, you need to first create at least one role. Here’s how:
 
-Navigate to the Role Management section.
-Click on the + Add Role button.
-Enter the Role Name and assign any desired permissions (Read, Write, Delete).
-Click Save to add the role.
-2. Add Users
+  -Navigate to the Role Management section.
+  -Click on the + Add Role button.
+  -Enter the Role Name and assign any desired permissions (Read, Write, Delete).
+  -Click Save to add the role.
+### 2. Add Users
 After creating roles, you can start adding users. Here’s how:
 
-Navigate to the User Management section.
-Click on the + Add User button.
-Enter the User's Name, Email, select a Role, and choose a Status (Active/Inactive).
-Click Save to add the user.
-3. Editing and Deleting Users/Roles
+  -Navigate to the User Management section.
+  -Click on the + Add User button.
+  -Enter the User's Name, Email, select a Role, and choose a Status (Active/Inactive).
+  -Click Save to add the user.
+### 3. Editing and Deleting Users/Roles
 You can also edit and delete users and roles:
-
-To edit, click the Edit button next to a user or role.
-To delete, click the Delete button next to a user or role.
-4. Data Persistence
+  -To edit, click the Edit button next to a user or role.
+  -To delete, click the Delete button next to a user or role.
+### 4. Data Persistence
 All roles and users will be saved in the browser's localStorage. This ensures that your data persists even after a page refresh.
-5. Search
+### 5. Search
 You can search for users or roles by typing in the search box at the top of the respective management sections.
-Local Storage
-Roles and users are stored in localStorage as follows:
-Roles: Stored under the key roles.
-Users: Stored under the key users.
-The data is automatically loaded from localStorage when the app starts, ensuring that no data is lost on refresh.
+### Local Storage
+  -Roles and users are stored in localStorage as follows:
+  -Roles: Stored under the key roles.
+  -Users: Stored under the key users.
+  -The data is automatically loaded from localStorage when the app starts, ensuring that no data is lost on refresh.
 
-File Structure
+## File Structure
 Here’s an overview of the file structure:
 
-bash
+```bash
 Copy code
 /src
   /components
@@ -104,11 +105,12 @@ Copy code
   - App.js                   # Main application component
   - index.js                 # Entry point of the app
   - README.md                # This file
-Troubleshooting
-1. Local Storage Not Persisting Data
+```
+## Troubleshooting
+### 1. Local Storage Not Persisting Data
 Ensure your browser is not in Incognito or Private mode, as local storage may not persist in those cases.
 Check the browser’s developer console for any errors related to local storage.
-2. Roles or Users Not Displaying After Refresh
+### 2. Roles or Users Not Displaying After Refresh
 Ensure that you have added roles first, as users cannot be added without roles. The app fetches roles from localStorage when it loads.
-Contributing
+## Contributing
 Feel free to fork this repository and submit pull requests for any improvements or bug fixes.
