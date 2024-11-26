@@ -33,7 +33,7 @@ Follow the steps below to run the app on your local machine:
 
 ### 1. Clone the Repository
 
-bash
+```bash
 git clone <repository-url>
 cd <project-directory>
 
