@@ -1,0 +1,178 @@
+/* .user-management .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  } */
+  
+  /* .user-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  } */
+  
+  /* .user-management th, .user-management td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+  } */
+/*   
+  .user-management th {
+    background: var(--primary-color);
+    color: var(--bg-color);
+  } */
+  
+  .user-management .edit-button {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .user-management .delete-button {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+
+  .user-management {
+    padding: 20px;
+    margin:20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-management .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user-management .header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .user-management .header input {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    background: var(--input-bg-color);
+  }
+  
+  .user-management .header button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .user-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: var(--table-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .user-management table thead {
+    background: var(--table-header-bg-color);
+    color: var(--table-header-text-color);
+  }
+  
+  .user-management table th,
+  .user-management table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .user-management table th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .user-management table td {
+    font-size: 14px;
+  }
+  
+  .user-management table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .user-management table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .user-management table th,
+    .user-management table td {
+      padding: 5px 8px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+    
+    .user-management table th {
+      font-size: 10px;
+      font-weight: bold;
+    }
+    
+    .user-management table td {
+      font-size: 8px;
+    }
+    
+    .user-management table tr:last-child td {
+      border-bottom: none;
+    }
+    
+    .user-management table button {
+      padding: 6px 10px;
+      font-size: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .user-management .header {
+      flex-wrap: wrap;
+    }
+  
+    .user-management .header h2 {
+      margin-bottom: 10px;
+    }
+  
+    .user-management .header input {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .user-management table th,
+    .user-management table td {
+      font-size: 10px;
+    }
+  }
+  

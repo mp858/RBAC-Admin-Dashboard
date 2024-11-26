@@ -1,0 +1,281 @@
+/* .role-management {
+    padding: 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .role-management .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .role-management .header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .role-management .header input {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    background: var(--input-bg-color);
+  }
+  
+  .role-management .header button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .role-management .header button:hover {
+    background: var(--primary-hover-color);
+  }
+  
+  .role-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: var(--table-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .role-management table thead {
+    background: var(--table-header-bg-color);
+    color: var(--table-header-text-color);
+  }
+  
+  .role-management table th,
+  .role-management table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .role-management table th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .role-management table td {
+    font-size: 14px;
+  }
+  
+  .role-management table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .role-management table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  
+  .role-management button {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .role-management button {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .role-management .header {
+      flex-wrap: wrap;
+    }
+  
+    .role-management .header h2 {
+      margin-bottom: 10px;
+    }
+  
+    .role-management .header input {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .role-management table th,
+    .role-management table td {
+      font-size: 12px;
+    }
+  }
+   */
+
+
+   /* .role-management .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  } */
+  
+  /* .role-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  } */
+  
+  /* .role-management th, .role-management td {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    text-align: left;
+  } */
+/*   
+  .role-management th {
+    background: var(--primary-color);
+    color: var(--bg-color);
+  } */
+  
+  .role-management .edit-button {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .role-management .delete-button {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+
+/* role */
+
+  .role-management {
+    padding: 20px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .role-management .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .role-management .header h2 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .role-management .header input {
+    flex-grow: 1;
+    margin: 0 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    background: var(--input-bg-color);
+  }
+  
+  .role-management .header button {
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .role-management table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: var(--table-bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .role-management table thead {
+    background: var(--table-header-bg-color);
+    color: var(--table-header-text-color);
+  }
+  
+  .role-management table th,
+  .role-management table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .role-management table th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .role-management table td {
+    font-size: 14px;
+  }
+  
+  .role-management table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .role-management table button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .role-management .header {
+      flex-wrap: wrap;
+    }
+  
+    .role-management .header h2 {
+      margin-bottom: 10px;
+    }
+  
+    .role-management .header input {
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .role-management table th,
+    .role-management table td {
+      font-size: 12px;
+    }
+  }
+  

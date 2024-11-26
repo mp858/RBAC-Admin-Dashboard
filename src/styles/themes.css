@@ -1,0 +1,60 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --border-color: #dddddd;
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: #181818;
+    --text-color: #f1f1f1;
+    --primary-color: #1e90ff;
+    --secondary-color: #aaaaaa;
+    --border-color: #333333;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Arial", sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid var(--border-color);
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin: 5px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .theme-switcher {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+  
